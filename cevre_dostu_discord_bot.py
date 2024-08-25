@@ -82,4 +82,17 @@ async def isler(ctx):
     await ctx.send(isler_listesi)
 
 
+@bot.command()
+async def yardim(ctx):
+    yardim_komutlari = """
+    - **$isler:** Cevre dostu isler onerilir. 
+    - **$cevresel_etkinlikler:** Yapabileceginiz yararli etkinlikleri onerir.
+    - **$su_enerji:** Su ve enerji tasaruf yontemleri.
+    - **$yesil_yasam:** Dunyayi daha saglikli yapmak icin tavsiyeler.
+    - **$geri_donusum:** Nasil geri donusum yapilir?.
+    - **$tanit:** Bot kendisini tanitir
+    - **$merhaba:** Kod buna karsilik verir.
+    """
+    await ctx.send(yardim_komutlari)
+
 bot.run("token")
