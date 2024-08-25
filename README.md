@@ -1,6 +1,6 @@
 # Çevre Dostu Discord Botu
 
-Bu proje, çevre dostu yaşam tarzını teşvik eden bir Discord botunu içermektedir. Bot, geri dönüşüm, yeşil yaşam tavsiyeleri, su ve enerji tasarrufu hakkında bilgi sağlar ve çevresel etkinlikler hakkında bilgilendirme yapar.
+Bu proje, çevre dostu yaşam tarzını teşvik eden bir Discord botunu içermektedir. Bot, geri dönüşüm, yeşil yaşam tavsiyeleri, su ve enerji tasarrufu hakkında bilgi sağlar ve çevresel etkinlikler hakkında bilgilendirme yapar. Ayrıca, hava gazları hakkında detaylı bilgi sunar.
 
 ## Özellikler
 
@@ -8,23 +8,25 @@ Bu proje, çevre dostu yaşam tarzını teşvik eden bir Discord botunu içermek
 - **$tanit**: Botun amaçlarını ve neler yapabileceğini açıklar.
 - **$geri_donusum**: Geri dönüşüm hakkında tavsiyeler verir.
 - **$yesil_yasam**: Yeşil yaşam tavsiyeleri sunar.
-- **$su_enerji**: Su ve enerji tasarrufu yöntemleri hakkında bilgi verir.
+- **$su_enerji**: Su ve enerji tasarrufu hakkında bilgi verir.
 - **$cevresel_etkinlikler**: Çevresel etkinlikler ve kampanyalar hakkında bilgi sağlar.
 - **$isler**: Çevre dostu iş seçenekleri hakkında bilgi verir.
 - **$yardim**: Mevcut komutlar hakkında bilgi verir.
+- **$gazlar**: Hava gazlarının özelliklerini, yüzdelerini, yararlarını ve zararlarını açıklar.
 
 ## Kurulum
 
 1. **Gerekli Kütüphaneler**: `discord.py` kütüphanesini yükleyin.
-
+   
+   ```python
    pip install discord.py
+   ```
 
+3. **Bot Token'ı**: Botunuzun token'ını almak için Discord Developer Portal'dan bir uygulama oluşturun ve token'ı kopyalayın. Token'ınızı aşağıdaki satırda yer alan `"YOUR_BOT_TOKEN_HERE"` ile değiştirin.
 
-2. **Bot Token'ı**: Botunuzun token'ını almak için Discord Developer Portal'dan bir uygulama oluşturun ve token'ı kopyalayın. Token'ınızı aşağıdaki satırda yer alan `"token"` ile değiştirin.
-
-
+   ```python
    bot.run("YOUR_BOT_TOKEN_HERE")
-
+   ```
 
 ## Kullanım
 
@@ -40,6 +42,7 @@ Bu proje, çevre dostu yaşam tarzını teşvik eden bir Discord botunu içermek
    - `$cevresel_etkinlikler`: Çevresel etkinlikler hakkında bilgi verir.
    - `$isler`: Çevre dostu iş seçeneklerini listeler.
    - `$yardim`: Tüm komutlar hakkında bilgi verir.
+   - `$gazlar`: Hava gazlarının bilgilerini gösterir.
 
 ## Botun Özelleştirilmesi
 
