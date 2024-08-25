@@ -95,4 +95,37 @@ async def yardim(ctx):
     """
     await ctx.send(yardim_komutlari)
 
+@bot.command()
+async def gazlar(ctx):
+    hava_gazlari = """
+    🌫️ **Hava Gazları ve Özellikleri:**
+
+    - **Karbon Dioksit (CO2):**
+      - **Yüzde:** Atmosferin yaklaşık %0.04'ü.
+      - **Yararları:** Bitkiler fotosentez için kullanır.
+      - **Zararları:** Küresel ısınmaya neden olur.
+
+    - **Oksijen (O2):**
+      - **Yüzde:** Atmosferin yaklaşık %21'i.
+      - **Yararları:** Tüm aerobik canlılar için yaşamsal öneme sahiptir.
+      - **Zararları:** Yüksek konsantrasyonlar oksidatif stres yaratabilir.
+
+    - **Azot (N2):**
+      - **Yüzde:** Atmosferin yaklaşık %78'i.
+      - **Yararları:** Kimyasal reaksiyonlarda az reaktiftir, atmosferin stabilitesine katkıda bulunur.
+      - **Zararları:** Düşük seviyelerde oksijen taşıma kapasitesini etkileyebilir.
+
+    - **Metan (CH4):**
+      - **Yüzde:** Atmosferde çok düşük konsantrasyonda bulunur.
+      - **Yararları:** Doğal gaz olarak enerji kaynağı olarak kullanılır.
+      - **Zararları:** Küresel ısınmayı hızlandıran güçlü bir sera gazıdır.
+
+    - **Ozon (O3):**
+      - **Yüzde:** Atmosferde düşük konsantrasyonda bulunur.
+      - **Yararları:** UV ışınlarını emerek dünya yüzeyini korur.
+      - **Zararları:** Troposferde (yüzey seviyesinde) hava kirliliğine ve sağlık sorunlarına yol açabilir.
+    """
+    await ctx.send(hava_gazlari)
+
+
 bot.run("token")
